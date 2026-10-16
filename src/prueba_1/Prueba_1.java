@@ -4,17 +4,23 @@
  */
 package prueba_1;
 
-/**
- *
- * @author USER
- */
+import java.util.Scanner;
+
 public class Prueba_1 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // HOLA
+
+        Scanner entrada = new Scanner(System.in);
+
+        Estudiante estudiante = new Estudiante();
+
+        System.out.println("=== SISTEMA DE ESTUDIANTES ===");
+        System.out.print("Ingrese el nombre del estudiante: ");
+
+        String nombre = entrada.nextLine();
+
+        estudiante.saludar(nombre);
+
+        entrada.close();
     }
-    
 }
